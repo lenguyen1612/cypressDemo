@@ -93,7 +93,7 @@ describe('WebElement', () => {
         })
     });
 
-    it.only('TC04 Register function at MailChimp', () => {
+    it('TC04 Register function at MailChimp', () => {
         cy.visit("https://login.mailchimp.com/signup/")
         //enter Email
         cy.get('input#email').then($status => {
@@ -127,4 +127,5 @@ describe('WebElement', () => {
 
         });
     });
+
 });

@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-28T17:35:46.999Z",
+    "end": "2021-08-28T17:35:58.885Z",
+    "duration": 11886,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3945fa40-6db2-47c6-a2c9-9cc38068aa9b",
+      "title": "",
+      "fullFile": "cypress/integration/exercises/cypress.commands.common/button_checkbox_radio.js",
+      "file": "cypress/integration/exercises/cypress.commands.common/button_checkbox_radio.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "490166a5-67c9-4ebd-b58d-8c7359af77d2",
+          "title": "[Topic 09] Button Checkbox Radio Button Javascript Alert Authentication Alert",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC01 Button",
+              "fullTitle": "[Topic 09] Button Checkbox Radio Button Javascript Alert Authentication Alert TC01 Button",
+              "timedOut": null,
+              "duration": 9756,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/exercises/cypress.commands.common/button_checkbox_radio.js/[Topic 09] Button Checkbox Radio Button Javascript Alert Authentication Alert --       TC01 Button (failed).png\"",
+              "code": "cy.visit('https://www.fahasa.com/customer/account/create');\ncy.get('li.popup-login-tab-login').click();\ncy.get('button.fhs-btn-login').should('not.be.visible');\ncy.get('input#login_username').type('email@gna.com');\ncy.get('input#login_password').type('email@gna.com');\ncy.get('button.fhs-btn-login').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<button.fhs-btn-login>' not to be 'visible'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.fhs-btn-login>' not to be 'visible'\n    at Context.eval (https://www.fahasa.com/__cypress/tests?p=cypress\\integration\\exercises\\cypress.commands.common\\button_checkbox_radio.js:104:36)",
+                "diff": null
+              },
+              "uuid": "333e10df-dc3d-4623-a351-81b9d0898488",
+              "parentUUID": "490166a5-67c9-4ebd-b58d-8c7359af77d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "333e10df-dc3d-4623-a351-81b9d0898488"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9756,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 11,
+    "passes": 10,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-28T17:35:34.088Z",
+    "end": "2021-08-28T17:37:05.185Z",
+    "duration": 49364,
+    "testsRegistered": 11,
+    "passPercent": 90.9090909090909,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3945fa40-6db2-47c6-a2c9-9cc38068aa9b",
+      "title": "",
+      "fullFile": "cypress/integration/exercises/cypress.commands.common/button_checkbox_radio.js",
+      "file": "cypress/integration/exercises/cypress.commands.common/button_checkbox_radio.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "490166a5-67c9-4ebd-b58d-8c7359af77d2",
+          "title": "[Topic 09] Button Checkbox Radio Button Javascript Alert Authentication Alert",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC01 Button",
+              "fullTitle": "[Topic 09] Button Checkbox Radio Button Javascript Alert Authentication Alert TC01 Button",
+              "timedOut": null,
+              "duration": 9756,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/exercises/cypress.commands.common/button_checkbox_radio.js/[Topic 09] Button Checkbox Radio Button Javascript Alert Authentication Alert --       TC01 Button (failed).png\"",
+              "code": "cy.visit('https://www.fahasa.com/customer/account/create');\ncy.get('li.popup-login-tab-login').click();\ncy.get('button.fhs-btn-login').should('not.be.visible');\ncy.get('input#login_username').type('email@gna.com');\ncy.get('input#login_password').type('email@gna.com');\ncy.get('button.fhs-btn-login').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<button.fhs-btn-login>' not to be 'visible'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.fhs-btn-login>' not to be 'visible'\n    at Context.eval (https://www.fahasa.com/__cypress/tests?p=cypress\\integration\\exercises\\cypress.commands.common\\button_checkbox_radio.js:104:36)",
+                "diff": null
+              },
+              "uuid": "333e10df-dc3d-4623-a351-81b9d0898488",
+              "parentUUID": "490166a5-67c9-4ebd-b58d-8c7359af77d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "333e10df-dc3d-4623-a351-81b9d0898488"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9756,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1a34cf17-d519-4d3d-bb4c-583708b3ed55",
+      "title": "",
+      "fullFile": "cypress/integration/exercises/cypress.commands.common/commands_WebBrowser.js",
+      "file": "cypress/integration/exercises/cypress.commands.common/commands_WebBrowser.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8348007a-f23e-4572-8e57-940d0a94a81a",
+          "title": "TC04 GetPage Source  Code - getPageSource (Test)",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Step01 - Access to the page http://live.demoguru99.com",
+              "fullTitle": "TC04 GetPage Source  Code - getPageSource (Test) Step01 - Access to the page http://live.demoguru99.com",
+              "timedOut": null,
+              "duration": 5854,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://live.demoguru99.com\");\ncy.viewport(1280, 720);",
+              "err": {},
+              "uuid": "2649bb2c-6ff0-41f4-b3b4-9eabd4daa809",
+              "parentUUID": "8348007a-f23e-4572-8e57-940d0a94a81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Step02 - Click MY ACCOUNT link at footer",
+              "fullTitle": "TC04 GetPage Source  Code - getPageSource (Test) Step02 - Click MY ACCOUNT link at footer",
+              "timedOut": null,
+              "duration": 2095,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('div.footer li.first a[title=\"My Account\"]').click();",
+              "err": {},
+              "uuid": "9f7d5a14-74ad-4e13-87d7-4caacc36dba7",
+              "parentUUID": "8348007a-f23e-4572-8e57-940d0a94a81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Step03 -Verify LoginPage contains the \"Login or Create an Account\"",
+              "fullTitle": "TC04 GetPage Source  Code - getPageSource (Test) Step03 -Verify LoginPage contains the \"Login or Create an Account\"",
+              "timedOut": null,
+              "duration": 72,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.document().contains('Login or Create an Account');",
+              "err": {},
+              "uuid": "368527e4-8f67-46e7-bb3e-76be8a935d75",
+              "parentUUID": "8348007a-f23e-4572-8e57-940d0a94a81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Step04 - Click CREATE AN ACCOUNT button",
+              "fullTitle": "TC04 GetPage Source  Code - getPageSource (Test) Step04 - Click CREATE AN ACCOUNT button",
+              "timedOut": null,
+              "duration": 1207,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[title=\"Create an Account\"]').click();",
+              "err": {},
+              "uuid": "dd0c878d-1f87-4ca2-89b9-8953b1b7bb4a",
+              "parentUUID": "8348007a-f23e-4572-8e57-940d0a94a81a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Step05 -Verify RegisterPage contains the \"Create an Account\"",
+              "fullTitle": "TC04 GetPage Source  Code - getPageSource (Test) Step05 -Verify RegisterPage contains the \"Create an Account\"",
+              "timedOut": null,
+              "duration": 69,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.document().contains('Create an Account');",
+              "err": {},
+              "uuid": "2d99bfb7-b01f-41d0-94ac-8e7865f0c12d",
+              "parentUUID": "8348007a-f23e-4572-8e57-940d0a94a81a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2649bb2c-6ff0-41f4-b3b4-9eabd4daa809",
+            "9f7d5a14-74ad-4e13-87d7-4caacc36dba7",
+            "368527e4-8f67-46e7-bb3e-76be8a935d75",
+            "dd0c878d-1f87-4ca2-89b9-8953b1b7bb4a",
+            "2d99bfb7-b01f-41d0-94ac-8e7865f0c12d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9297,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ab196f07-83ce-40dd-8be5-d16cf8785226",
+      "title": "",
+      "fullFile": "cypress/integration/exercises/cypress.commands.common/commands_WebElement.js",
+      "file": "cypress/integration/exercises/cypress.commands.common/commands_WebElement.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3231a6c5-cefc-4b9e-bf47-6fe0c53fb61a",
+          "title": "WebElement",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC01 Verify isDisplayed",
+              "fullTitle": "WebElement TC01 Verify isDisplayed",
+              "timedOut": null,
+              "duration": 2991,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://automationfc.github.io/basic-form/index.html\");\ncy.get('input#mail').then($status => {\n  if ($status.is(':visible')) {\n    cy.get('input#mail').type('email@gmail.com');\n  }\n});\ncy.get('#under_18').then($status => {\n  if ($status.is(':visible')) {\n    cy.get('#under_18').check();\n  }\n});\ncy.get('#edu').then($status => {\n  if ($status.is(':visible')) {\n    cy.get('#edu').type('education');\n  }\n});\ncy.get('div.figcaption h5').should('not.be.visible');",
+              "err": {},
+              "uuid": "44344349-8f91-4c8f-8b47-2caf4b4b5306",
+              "parentUUID": "3231a6c5-cefc-4b9e-bf47-6fe0c53fb61a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC02 Verify isEnabled/isDisabled",
+              "fullTitle": "WebElement TC02 Verify isEnabled/isDisabled",
+              "timedOut": null,
+              "duration": 382,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://automationfc.github.io/basic-form/index.html\");\ncy.get('input#mail').then($status => {\n  if ($status.is(':visible')) {\n    console.log('Email is displayed');\n  }\n});\ncy.get('#under_18').then($status => {\n  if ($status.is(':visible')) {\n    console.log('Checkbox Under 18 is displayed');\n  }\n});\ncy.get('#edu').then($status => {\n  if ($status.is(':visible')) {\n    console.log('Education is displayed');\n  }\n});\ncy.get('#job1').then($status => {\n  if ($status.is(':visible')) {\n    console.log('Job Role 1 is displayed');\n  }\n});\ncy.get('#job2').then($status => {\n  if ($status.is(':visible')) {\n    console.log('Job Role 2 is displayed');\n  }\n});\ncy.get('#development').then($status => {\n  if ($status.is(':visible')) {\n    console.log('Interset Development is displayed');\n  }\n});\ncy.get('#slider-1').then($status => {\n  if ($status.is(':visible')) {\n    console.log('Slide 1 is displayed');\n  }\n}); //verify isDisabled\ncy.get('#password').then($status => {\n  if ($status.not(':visible')) {\n    console.log('Password is disabled');\n  }\n});\ncy.get('#radio-disabled').then($status => {\n  if ($status.not(':visible')) {\n    console.log('Age (Radio button is disabled) is disabled');\n  }\n});\ncy.get('#password').then($status => {\n  if ($status.not(':visible')) {\n    console.log('Biography is disabled');\n  }\n});\ncy.get('#bio').then($status => {\n  if ($status.not(':visible')) {\n    console.log('Job Role 3 is disabled');\n  }\n});\ncy.get('#check-disbaled').then($status => {\n  if ($status.not(':visible')) {\n    console.log('Interest (Checkbox is disabled) is disabled');\n  }\n});\ncy.get('#slider-2').then($status => {\n  if ($status.not(':visible')) {\n    console.log('Slide 2 is disabled');\n  }\n});",
+              "err": {},
+              "uuid": "81aaed35-f192-47bb-951c-fba14f98c221",
+              "parentUUID": "3231a6c5-cefc-4b9e-bf47-6fe0c53fb61a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC04 Register function at MailChimp",
+              "fullTitle": "WebElement TC04 Register function at MailChimp",
+              "timedOut": null,
+              "duration": 17821,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://login.mailchimp.com/signup/\"); //enter Email\ncy.get('input#email').then($status => {\n  if ($status.is(':visible')) {\n    cy.get('input#email').wait(3500).type('emailtesting@gmail.com');\n  }\n}); //enter Username\ncy.get('input[name=\"username\"]').then($status => {\n  if ($status.is(':visible')) {\n    cy.get('input[name=\"username\"]').type('testingCypress');\n  } //enter Pass with One Number\n\n  cy.get('input#new_password').then($status => {\n    if ($status.is(':visible')) {\n      cy.get('input#new_password').type('1');\n      cy.get('#create-account').should('be.disabled');\n      cy.get('input#new_password').type('q');\n      cy.get('#create-account').should('be.disabled');\n      cy.get('input#new_password').type('@');\n      cy.get('#create-account').should('be.disabled');\n      cy.get('input#new_password').type('P');\n      cy.get('#create-account').should('be.disabled');\n      cy.get('input#new_password').type('1235');\n      cy.get('#create-account').should('be.visible');\n    }\n  }); //check newsletter\n  cy.get('input[name=\"marketing_newsletter\"]').check().should('be.checked');\n});",
+              "err": {},
+              "uuid": "31ec08a5-3c2f-43be-89e6-8118378ab641",
+              "parentUUID": "3231a6c5-cefc-4b9e-bf47-6fe0c53fb61a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "44344349-8f91-4c8f-8b47-2caf4b4b5306",
+            "81aaed35-f192-47bb-951c-fba14f98c221",
+            "31ec08a5-3c2f-43be-89e6-8118378ab641"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21194,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3f40174e-ae2f-4356-9736-5ac40a31f34e",
+      "title": "",
+      "fullFile": "cypress/integration/sample_spec.js",
+      "file": "cypress/integration/sample_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "93f1689e-f239-47f1-b9b1-30edea82eb5e",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visit the Kitchen Sink!",
+              "fullTitle": "My First Test Visit the Kitchen Sink!",
+              "timedOut": null,
+              "duration": 2643,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env(\"URL\"));\ncy.viewport(1280, 720);",
+              "err": {},
+              "uuid": "f525d770-824d-4137-a07d-6143b90c488c",
+              "parentUUID": "93f1689e-f239-47f1-b9b1-30edea82eb5e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f525d770-824d-4137-a07d-6143b90c488c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2643,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c64fe7ad-dc28-46ea-a176-a26ba161faea",
+      "title": "",
+      "fullFile": "cypress/integration/exercises/api/tests/firstTest.js",
+      "file": "cypress/integration/exercises/api/tests/firstTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f6a51feb-68d8-4e47-9591-0c3a9a3cb5bd",
+          "title": "e-API Dashboard Document",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get all employees data",
+              "fullTitle": "e-API Dashboard Document Get all employees data",
+              "timedOut": null,
+              "duration": 6474,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//GET method\ncy.request({\n  method: 'GET',\n  url: 'https://sangbui.com/api/v1/employees',\n  headers: {\n    Authorization: 'Basic d2ViX2FwcDpjaGFuZ2VpdA=='\n  }\n}).its('status').should('eq', 200);",
+              "err": {},
+              "uuid": "3c33a0e9-4142-42e8-8933-1ed8cef6807e",
+              "parentUUID": "f6a51feb-68d8-4e47-9591-0c3a9a3cb5bd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3c33a0e9-4142-42e8-8933-1ed8cef6807e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6474,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,5 +1,18 @@
 {
     "env":{
         "URL":"https://tiki.vn/"
-    }
+    },
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "reporterEnabled": "mochawesome",
+      "mochawesomeReporterOptions": {
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      }
+    },
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "cypress/reports/mochareports/assets"
 }

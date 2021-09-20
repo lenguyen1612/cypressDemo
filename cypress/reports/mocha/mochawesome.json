@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-28T17:35:34.088Z",
+    "end": "2021-08-28T17:35:40.845Z",
+    "duration": 6757,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c64fe7ad-dc28-46ea-a176-a26ba161faea",
+      "title": "",
+      "fullFile": "cypress/integration/exercises/api/tests/firstTest.js",
+      "file": "cypress/integration/exercises/api/tests/firstTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f6a51feb-68d8-4e47-9591-0c3a9a3cb5bd",
+          "title": "e-API Dashboard Document",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get all employees data",
+              "fullTitle": "e-API Dashboard Document Get all employees data",
+              "timedOut": null,
+              "duration": 6474,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//GET method\ncy.request({\n  method: 'GET',\n  url: 'https://sangbui.com/api/v1/employees',\n  headers: {\n    Authorization: 'Basic d2ViX2FwcDpjaGFuZ2VpdA=='\n  }\n}).its('status').should('eq', 200);",
+              "err": {},
+              "uuid": "3c33a0e9-4142-42e8-8933-1ed8cef6807e",
+              "parentUUID": "f6a51feb-68d8-4e47-9591-0c3a9a3cb5bd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3c33a0e9-4142-42e8-8933-1ed8cef6807e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6474,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
